@@ -3,31 +3,29 @@ def numeros ():
     b = int(input('Segundo número: '))
     return a, b
 
-def adicao (a, b):
+def adicao (a,b):
     return a + b
-def subtracao (a, b):
+def subtracao (a,b):
     return a - b
-def multiplicacao (a, b):
+def multiplicacao (a,b):
     return a * b
-def divisao (a, b):
+def divisao (a,b):
     if b == 0:
         return "Não é possível dividir por zero."
     return a / b
 
-def main():
-    while True:
-        a, b = numeros()
+while True:
+        a,b = numeros()
         escolha = input("::Considere os tipos de operação a seguir:\nAdição (1)\nSubtração (2)\nMultiplicação (3)\nDivisão (4)\n::Qual é a sua escolha? ")
 
         if escolha == '1':
-            adicao()
+            print('o resultado da adição é:',adicao(a,b))
         elif escolha == '2':
-            subtracao()
+            print('O resultado da subtração é:',subtracao(a,b))
         elif escolha == '3':
-            multiplicacao()
+            print('O resultado da multiplicação é:',multiplicacao(a,b))
         elif escolha == '4':
-            divisao()
+            print('O resultado da divisão',divisao(a,b))
         else:
             print("Opção inválida.")
-if __name__ == "__main__":
-    main()
+        break

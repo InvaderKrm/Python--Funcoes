@@ -11,12 +11,12 @@ def multiplicacao (a,b):
     return a * b
 def divisao (a,b):
     if b == 0:
-        return "Não é possível dividir por zero."
+        return 'Não é possível dividir por zero.'
     return a / b
 
 while True:
         a,b = numeros()
-        escolha = input("::Considere os tipos de operação a seguir:\nAdição (1)\nSubtração (2)\nMultiplicação (3)\nDivisão (4)\n::Qual é a sua escolha? ")
+        escolha = input('::Considere os tipos de operação a seguir:\nAdição (1)\nSubtração (2)\nMultiplicação (3)\nDivisão (4)\n::Qual é a sua escolha? ')
 
         if escolha == '1':
             print('o resultado da adição é:',adicao(a,b))
@@ -25,7 +25,10 @@ while True:
         elif escolha == '3':
             print('O resultado da multiplicação é:',multiplicacao(a,b))
         elif escolha == '4':
-            print('O resultado da divisão',divisao(a,b))
+            if b==0:
+                print(divisao(a, b))
+            else:
+                print('O resultado da divisão', divisao(a, b))
         else:
-            print("Opção inválida.")
+            print('Opção inválida.')
         break

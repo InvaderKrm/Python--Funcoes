@@ -17,9 +17,9 @@ def dpi(preco): #Dólares para Ienes
 
 #Caso escolha Ienes
 def ipr(preco): #Ienes para Reais
-    return
+    return preco * 0.038
 def ipd(preco): #Ienes para Dólares
-    return
+    return preco * 0.0067
 
 while True:
     preco = valor()
@@ -45,13 +45,17 @@ while True:
             print('Opção inválida.')
     #Ienes
     elif inicial == '3':
-        c = input('Para qual medida você deseja converter?\n(1) Fahrenheit;\n(2) reais;\n')
+        c = input('Para qual moeda você deseja converter?\n(1) Reais;\n(2) Dólares;\n')
         if c == '1':
-            print(preco,'graus Kelvin é igual a',kpf(preco),'graus Fahrenheit!')
+            print(f'{preco:.2f} JPY é igual a {ipr(preco):.2f} BRL!')
         elif c == '2':
-            print(preco,'graus Kelvin é igual a',kpc(preco),'graus reais!')
+            print(f'{preco:.2f} JPY é igual a {ipd(preco):.2f} USD!')
         else:
-            print('Opção inválida.')
+            print('Opção inválida.')ff   iko
+ff   iko
+ff   iko
+ff   iko
+
     else:
         print('Opção inválida.')
     break

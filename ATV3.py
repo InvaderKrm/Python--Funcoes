@@ -8,4 +8,4 @@ def fatorial(n):
 
 
 n = int(input('Digite um número: '))
-print(f'O fatoriaal do número {n} é igual a {fatorial(n)}.')
+print(f'O fatorial do número {n} é igual a {fatorial(n)}.')

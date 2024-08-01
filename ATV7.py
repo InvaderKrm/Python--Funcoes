@@ -51,11 +51,7 @@ while True:
         elif c == '2':
             print(f'{preco:.2f} JPY é igual a {ipd(preco):.2f} USD!')
         else:
-            print('Opção inválida.')ff   iko
-ff   iko
-ff   iko
-ff   iko
-
+            print('Opção inválida.')
     else:
         print('Opção inválida.')
     break

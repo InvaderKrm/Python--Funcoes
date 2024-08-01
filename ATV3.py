@@ -1,11 +1,11 @@
-import math
+def fatorial(n):
+    if n < 0:
+        return "Não é possível calcular o fatorial de números negativos."
+    resultado = 1
+    for i in range(1, n + 1):
+        resultado *= i
+    return resultado
 
-def valor():
-    n = int(input('digite o numero: '))
-    resultado = print(math.factorial(n))
-    return resultado, n
 
-while True:
-    resultado = valor()
-    print('O fatorial do numero',n,'é igual a',resultado)
-
+n = int(input('Digite um número: '))
+print(f'O fatoriaal do número {n} é igual a {fatorial(n)}.')
